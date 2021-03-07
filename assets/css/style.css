@@ -7,7 +7,7 @@
 /* Element Selectors */
 body {
   position: relative;
-  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   background-color: #2b754c;
   color: #ac7049;
@@ -20,6 +20,11 @@ h2 {
 
 main {
   padding: 60px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
 }
 
 li {
@@ -30,7 +35,12 @@ li {
 
 a {
   text-decoration: none;
-  color: #381907;
+  color: #86441e;
+}
+a:hover {
+  text-decoration: underline;
+  color:#ac7049
+  
 }
 
 header,
@@ -38,19 +48,22 @@ footer {
   height: 60px;
   width: 100%;
   line-height: 60px;
-  background-color: #266150;
+  background-color: #074231;
 }
 
 header {
   position: fixed;
-  border-bottom: 10px solid #DDAF94;
+  border-bottom: 10px solid #703b3b;
 }
-
+/* 
+.flex-row {
+  display: flex; */
+ 
 footer {
   position: absolute;
   margin-top: 0;
   bottom: 0;
-  border-bottom: 10px solid #4F4846;
+  border-bottom: 10px solid #daa467;
   color: #FDF8F5;    
 }
 
@@ -70,39 +83,26 @@ section {
   background-color:  #E8CEBF;
 }
 
-form {
-  /* Center the form on the page */
-  margin: 0 auto;
-  width: 500px;
-  padding: 10px;
-  border: 5px solid #DDAF94;
-  border-radius: 20px;
-}
-
 label {
   display: inline-block;
   width: 100px;
 }
   
-input, 
-textarea {
-  box-sizing: border-box;
-  width: 300px;
-  border: 1px solid #4F4846;
-}
-
 textarea {
   vertical-align: top;
   height: 60px;
 }
-  
-button {
-  height: 40px;
-  width: 120px;
-  background-color: #4F4846;
-  color: #FDF8F5;
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
- 
+.flex-item {
+  display: flex;
+  align-items: flex-end;
+  min-height: 150px;
+  max-height: 150px;
+}
 /* Class Selectors */
 .text-center {
   text-align: center;
